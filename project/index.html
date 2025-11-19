@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sk" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio – Domov</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="css/base.css"/>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script src="css/tailwind.config.js"></script>
+    </head>
+
+    <body class="min-h-screen flex flex-col bg-background text-foreground">
+        <header class="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+            <div class="container flex h-16 items-center justify-between">
+                <a href="index.html" class="font-bold text-xl">Portfolio</a>
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="index.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Domov</a>
+                    <a href="about.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">O mne</a>
+                    <a href="projects.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Projekty</a>
+                    <a href="skills.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Skills</a>
+                    <a href="contact.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Kontakt</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="p-2 rounded-lg hover:bg-accent transition" aria-label="Toggle theme">
+                    <i data-lucide="moon" class="h-5 w-5 block dark:hidden"></i>
+                    <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+                    <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
+                </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden border-t bg-background">
+                <div class="container py-6 flex flex-col space-y-1 text-sm font-medium">
+                <a href="index.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Domov</a>
+                <a href="about.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">O mne</a>
+                <a href="projects.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Projekty</a>
+                <a href="skills.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Skills</a>
+                <a href="contact.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Kontakt</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-1">
+        <section class="py-20 md:py-32">
+            <div class="container">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                    <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+                        Ahoj, som <span class="text-primary">Patrik Nemčok</span>
+                    </h1>
+                    <p class="text-xl text-muted-foreground max-w-lg">
+                        Full-stack developer so zameraním na tvorbu moderných, responzívnych a užívateľsky prívetivých webových aplikácií.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="projects.html" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-12 px-8">
+                        Moje práce
+                        <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                        </a>
+                        <a href="contact.html" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring bg-transparent border border-input hover:bg-accent hover:text-accent-foreground h-12 px-8">
+                        Skontaktuj ma
+                        <i data-lucide="mail" class="ml-2 h-5 w-5"></i>
+                        </a>
+                    </div>
+                    </div>
+
+                    <div class="aspect-square rounded-2xl overflow-hidden bg-muted shadow-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=800&fit=crop"
+                        alt="Developer workspace"
+                        class="w-full h-full object-cover"
+                    />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-muted/50">
+            <div class="container">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">Čo robím?</h2>
+                    <p class="text-muted-foreground max-w-2xl mx-auto text-lg">
+                    Kombinujem svoju kreativitu a technické zručnosti na vytváranie výnimočných digitálnych zážitkov.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 md:grid-rows-2 gap-8">
+                    <div class="p-6 rounded-lg bg-card border">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                            <i data-lucide="code" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Development</h3>
+                        <p class="text-muted-foreground">
+                            Tvorba škálovateľných a udržiavateľných webových aplikácií pomocou najnovších technológií
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-lg bg-card border">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                            <i data-lucide="palette" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Dizajn</h3>
+                        <p class="text-muted-foreground">
+                            Vytváranie intuitívnych a vizuálne príťažlivých rozhraní, ktoré používatelia milujú
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-lg bg-card border">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                            <i data-lucide="zap" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Výkon</h3>
+                        <p class="text-muted-foreground">
+                            Optimalizácia aplikácií pre rýchlosť a efektívnosť s cieľom poskytnúť najlepší používateľský zážitok
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-lg bg-card border">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                            <i data-lucide="zap" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Flexibilita</h3>
+                        <p class="text-muted-foreground">
+                            Prispôsobenie riešení podľa špecifických potrieb a požiadaviek klientov
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-lg bg-card border">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                            <i data-lucide="zap" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Spolupráca</h3>
+                        <p class="text-muted-foreground">
+                            Úzka spolupráca s klientmi a tímami na dosiahnutie spoločných cieľov
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-lg bg-card border">
+                        <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                            <i data-lucide="zap" class="h-6 w-6 text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Prístup</h3>
+                        <p class="text-muted-foreground">
+                            Zameranie na používateľa a jeho potreby pri každom kroku vývoja
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                <h2 class="text-3xl md:text-4xl font-bold">Otvorený spolupráci?</h2>
+                <p class="text-xl text-muted-foreground">
+                Máte projekt na mysli? Rád by som o ňom počul a prediskutoval, ako môžeme vaše nápady oživiť.
+                </p>
+                <a href="contact.html" class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8">
+                Začať konverzáciu
+                <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                </a>
+            </div>
+            </div>
+        </section>
+        </main>
+
+        <footer class="border-t py-8 mt-auto">
+            <div class="container">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+                <p>© 2025 Portfolio. Všetky práva vyhradené.</p>
+                <div class="flex items-center gap-6">
+                    <a href="https://www.instagram.com/patres.png/" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition">
+                    <i data-lucide="instagram" class="h-5 w-5"></i>
+                    </a>
+                    <a href="https://sk-sk.facebook.com/people/Patrik-Nem%C4%8Dok/pfbid033oBsjUhELN3eaJ1Ser4Hi4Qc8Fcj2kiRa4GBs4yekeX1SLsUk57ZUTEMaAdxAD1il/" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition">
+                    <i data-lucide="facebook" class="h-5 w-5"></i>
+                    </a>
+                    <a href="https://github.com/Patnixx" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition">
+                    <i data-lucide="github" class="h-5 w-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/patrik-nem%C4%8Dok-8984512b9/" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition">
+                    <i data-lucide="linkedin" class="h-5 w-5"></i>
+                    </a>
+                    <a href="mailto:patongaming@gmail.com" class="hover:text-foreground transition">
+                    <i data-lucide="mail" class="h-5 w-5"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>  
+    </body>
+</html>

@@ -1,0 +1,51 @@
+@layer base {
+    :root {
+        --background: #ffffff;
+        --foreground: 330.0 0.0% 3.9%;
+        --card: #ffffff;
+        --card-foreground: 330.0 0.0% 3.9%;
+        --popover: 0.0 0.0% 100.0%;
+        --popover-foreground: 330.0 0.0% 3.9%;
+        --primary: 355.8 100.0% 33.1%;
+        --primary-foreground: 0.0 0.0% 100.0%;
+        --secondary: 5.9 76.0% 94.8%;
+        --secondary-foreground: 0.0 100.0% 16.6%;
+        --muted: #ececf0;
+        --muted-foreground: #717182;
+        --accent: 8.7 100.0% 95.6%;
+        --accent-foreground: 0.0 100.0% 16.6%;
+        --border: rgba(0, 0, 0, 0.1);
+        --input: transparent;
+        --ring: 355.8 100.0% 33.1%;
+        --radius: 0.625rem;
+    }
+
+    .dark {
+        --background: 330.0 0.0% 3.9%;
+        --foreground: 180.0 0.0% 98.0%;
+        --card: 330.0 0.0% 3.9%;
+        --card-foreground: 180.0 0.0% 98.0%;
+        --popover: 330.0 0.0% 3.9%;
+        --popover-foreground: 180.0 0.0% 98.0%;
+        --primary: 274.0 74.0% 74.0%;
+        --primary-foreground: 180.0 0.0% 98.0%;
+        --secondary: 262.1 29.4% 17.9%;
+        --secondary-foreground: 180.0 0.0% 98.0%;
+        --muted: 0.0 0.0% 14.9%;
+        --muted-foreground: 0.0 0.0% 63.0%;
+        --accent: 263.9 39.4% 22.3%;
+        --accent-foreground: 180.0 0.0% 98.0%;
+        --border: 0.0 0.0% 14.9%;
+        --input: 0.0 0.0% 14.9%;
+        --ring: 274.0 74.0% 74.0%;
+    }
+
+
+    .container {
+        max-width: 72rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
