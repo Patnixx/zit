@@ -1,0 +1,29 @@
+<div class="container flex h-16 items-center justify-between">
+    <a href="index.html" class="font-bold text-xl">Portfolio</a>
+    <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="index.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Domov</a>
+        <a href="about.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">O mne</a>
+        <a href="projects.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Projekty</a>
+        <a href="skills.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Skills</a>
+        <a href="contact.html" class="nav-link transition-colors hover:text-foreground/80 text-foreground/60">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-4">
+        <button id="theme-toggle" class="p-2 rounded-lg hover:bg-accent transition" aria-label="Toggle theme">
+            <i data-lucide="moon" class="h-5 w-5 block dark:hidden"></i>
+            <i data-lucide="sun" class="h-5 w-5 hidden dark:block"></i>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2">
+            <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+            <i data-lucide="x" class="h-6 w-6 hidden" id="close-icon"></i>
+        </button>
+    </div>
+</div>
+<div id="mobile-menu" class="hidden border-t bg-background">
+    <div class="container py-6 flex flex-col space-y-1 text-sm font-medium">
+        <a href="index.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Domov</a>
+        <a href="about.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">O mne</a>
+        <a href="projects.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Projekty</a>
+        <a href="skills.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Skills</a>
+        <a href="contact.html" class="nav-link px-4 py-2 rounded-md hover:bg-accent">Kontakt</a>
+    </div>
+</div>
